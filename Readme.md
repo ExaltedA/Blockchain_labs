@@ -1,0 +1,3 @@
+# Etherium Calculator
+
+Django app

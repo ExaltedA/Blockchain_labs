@@ -1,9 +1,9 @@
 
 from django.urls import path, include
 
-from calculatorapp import views
+from rootapp import views
 
 urlpatterns = [
 
-    path('', views.index, name = 'index'),
+    path('', views.root, name = 'root'),
 ]

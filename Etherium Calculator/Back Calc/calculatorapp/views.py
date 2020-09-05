@@ -9,10 +9,6 @@ def index(request):
     return render(request, 'index.html')
 
 
-def exchange(a):
-    return a * EtherCurrent()
-
-
 def EtherCurrent():
     source = requests.get('https://www.coingecko.com/en/coins/ethereum').text
 
@@ -44,7 +40,6 @@ def submitquery(request):
         ans = float(q) * float(cur)
 
     try:
-
 
         mydictionary = {
             "q": q,
